@@ -26,6 +26,15 @@
 		B07230E42A86DF6200F897B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B07230E32A86DF6200F897B6 /* GoogleService-Info.plist */; };
 		B07230E92A86E39100F897B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230E82A86E39100F897B6 /* AppDelegate.swift */; };
 		B07230EA2A86E39100F897B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230E82A86E39100F897B6 /* AppDelegate.swift */; };
+		B07230ED2A86E66F00F897B6 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230EC2A86E66F00F897B6 /* InventoryItem.swift */; };
+		B07230EE2A86E66F00F897B6 /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230EC2A86E66F00F897B6 /* InventoryItem.swift */; };
+		B07230F12A86E6F800F897B6 /* InventoryListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230F02A86E6F800F897B6 /* InventoryListVM.swift */; };
+		B07230F22A86E6F800F897B6 /* InventoryListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230F02A86E6F800F897B6 /* InventoryListVM.swift */; };
+		B07230F42A86E76300F897B6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230F32A86E76300F897B6 /* String+Extension.swift */; };
+		B07230F52A86E76300F897B6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230F32A86E76300F897B6 /* String+Extension.swift */; };
+		B07230F82A86E7B500F897B6 /* InventoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230F72A86E7B500F897B6 /* InventoryListView.swift */; };
+		B07230FA2A86E7EA00F897B6 /* InventoryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230F92A86E7EA00F897B6 /* InventoryFormView.swift */; };
+		B07230FD2A86E85600F897B6 /* InventoryFormVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07230FC2A86E85600F897B6 /* InventoryFormVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +54,12 @@
 		B07230E52A86E27F00F897B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B07230E62A86E2B900F897B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B07230E82A86E39100F897B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B07230EC2A86E66F00F897B6 /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		B07230F02A86E6F800F897B6 /* InventoryListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListVM.swift; sourceTree = "<group>"; };
+		B07230F32A86E76300F897B6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B07230F72A86E7B500F897B6 /* InventoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListView.swift; sourceTree = "<group>"; };
+		B07230F92A86E7EA00F897B6 /* InventoryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFormView.swift; sourceTree = "<group>"; };
+		B07230FC2A86E85600F897B6 /* InventoryFormVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFormVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +111,8 @@
 		B07230AE2A86DEC000F897B6 /* HilbertStore */ = {
 			isa = PBXGroup;
 			children = (
+				B07230FB2A86E82B00F897B6 /* Observables */,
+				B07230F62A86E78900F897B6 /* Views */,
 				B07230E52A86E27F00F897B6 /* Info.plist */,
 				B07230E32A86DF6200F897B6 /* GoogleService-Info.plist */,
 				B07230AF2A86DEC000F897B6 /* HilbertStoreApp.swift */,
@@ -153,9 +170,45 @@
 		B07230E72A86E36F00F897B6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B07230EF2A86E69300F897B6 /* Observables */,
+				B07230EB2A86E63F00F897B6 /* Models */,
 				B07230E82A86E39100F897B6 /* AppDelegate.swift */,
+				B07230F32A86E76300F897B6 /* String+Extension.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		B07230EB2A86E63F00F897B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B07230EC2A86E66F00F897B6 /* InventoryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B07230EF2A86E69300F897B6 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				B07230F02A86E6F800F897B6 /* InventoryListVM.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		B07230F62A86E78900F897B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B07230F72A86E7B500F897B6 /* InventoryListView.swift */,
+				B07230F92A86E7EA00F897B6 /* InventoryFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B07230FB2A86E82B00F897B6 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				B07230FC2A86E85600F897B6 /* InventoryFormVM.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +330,12 @@
 				B07230E92A86E39100F897B6 /* AppDelegate.swift in Sources */,
 				B07230B22A86DEC000F897B6 /* ContentView.swift in Sources */,
 				B07230B02A86DEC000F897B6 /* HilbertStoreApp.swift in Sources */,
+				B07230FD2A86E85600F897B6 /* InventoryFormVM.swift in Sources */,
+				B07230F12A86E6F800F897B6 /* InventoryListVM.swift in Sources */,
+				B07230F42A86E76300F897B6 /* String+Extension.swift in Sources */,
+				B07230ED2A86E66F00F897B6 /* InventoryItem.swift in Sources */,
+				B07230F82A86E7B500F897B6 /* InventoryListView.swift in Sources */,
+				B07230FA2A86E7EA00F897B6 /* InventoryFormView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +346,9 @@
 				B07230EA2A86E39100F897B6 /* AppDelegate.swift in Sources */,
 				B07230CA2A86DEE000F897B6 /* ContentView.swift in Sources */,
 				B07230C82A86DEE000F897B6 /* HilbertStoreVisionApp.swift in Sources */,
+				B07230F22A86E6F800F897B6 /* InventoryListVM.swift in Sources */,
+				B07230F52A86E76300F897B6 /* String+Extension.swift in Sources */,
+				B07230EE2A86E66F00F897B6 /* InventoryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
